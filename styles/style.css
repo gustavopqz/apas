@@ -80,7 +80,7 @@ nav ul li a {
     padding-top: 10vh;
     min-height: 60vh;
     display: flex;
-    background: url('paws.png');
+    background: url('../images/paws.png');
     background-color: #D0C7BF;
     justify-content: space-between;
     align-items: center;
@@ -155,7 +155,7 @@ nav ul li a {
 /* Como nos ajudar */
 #ajudar {
     min-height: 80vh;
-    background: url('dog.jpg');
+    background: url('../images/dog.jpg');
     background-size: cover;
     display: flex;
     padding: 10vh 0;
@@ -205,7 +205,7 @@ nav ul li a {
 /* Contatos */
 #contatos {
     min-height: 60vh;
-    background: url('paws.png');
+    background: url('../images/paws.png');
     display: flex;
     flex-direction: column;
     align-items: center;
