@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="styles/modal.css">
+    <script src="main.js" defer></script>
+</head> 
+<body>
+    <form id="form" action="https://api.staticforms.xyz/submit" method="post">
+        <h2>Gostaria de adotar? Nos mande uma solicitação:</h2>
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/formEnviado.html">
+        <input type="hidden" name="accessKey" value="56a8e93a-9f5f-41ab-89b1-f864fc4dfeb3">
+        <div class="inputs">
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Nome e Sobrenome">
+        </div>
+        <div class="inputs">
+            <label>E-mail:</label>
+            <input type="text" name="email" placeholder="teste@email.com.br">
+        </div>
+        <div class="inputs">
+            <label>Telefone:</label>
+            <input type="text" name="telefone" placeholder="(XX) 9 XXXX-XXXX">
+        </div>
+        <div id="buttons">
+            <input type="button" value="Voltar" onclick="voltarAoSite()">
+            <input id="submitForm" type="submit">
+        </div>
+
+        <script>
+            function voltarAoSite(){
+                window.location.href = 'http://localhost:5500/index.html'
+            }
+        </script>
+</body>
+</html>

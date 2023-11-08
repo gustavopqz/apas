@@ -272,6 +272,9 @@ nav ul li a {
     background-color: #ffffff;
 }
 
+/* Modal */
+
+
 /* Footer */
 footer {
     background-color: #d0c7bf;
@@ -388,4 +391,56 @@ footer {
     #map iframe{
         max-height: 60vh;
     }
+}
+
+/* Image bounce */
+
+@keyframes bounce{
+    0% { transform: scale(1);}
+    50% { transform: scale(1.1);}
+    100% { transform: scale(1);}
+}
+.bounce{
+    animation: bounce 2s infinite;
+}
+
+/* Color change */
+#titulo{
+    transition: ease 1s;
+}
+
+#mudarCor{
+    background-color: #fff;
+    color: #397269;
+    border: 1px solid #397269;
+    padding: .5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: ease .3s;
+}
+
+#mudarCor:hover{
+    background-color: #397269;
+    color: #fff;
+}
+
+.red{
+    color: #d70202;
+}
+
+.blue{
+    color: #2b8eff;
+}
+
+.yellow{
+    color: #ffd900;
+}
+
+.green{
+    color: #1fc61e;
+}
+
+.purple{
+    color: #aa43f1;
 }

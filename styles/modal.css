@@ -1,0 +1,69 @@
+/* Importando fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: url('../images/dog.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Form */
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60vh;
+    min-width: 40vw;
+    background-color: #2b8eff90;
+    padding: 1em;
+    border-radius: 4px;
+    margin-right: 2em;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons input{
+    padding: .2em 1.2em;
+    border: 1px solid #397269;
+    color: #397269;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: ease .3s;
+}
+
+#buttons input:hover{
+    color: #FFF;
+    background-color: #397269;
+}
+
+.inputs input{
+    font-size: 1.2rem;
+    padding-inline: 2px;
+}
+
+.inputs input:focus{
+    outline: none;
+}
+
+#buttons{
+    display: flex;
+    gap: 1vw;
+}
